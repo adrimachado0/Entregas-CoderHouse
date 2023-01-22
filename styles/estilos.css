@@ -82,20 +82,8 @@ h1,h2,h3,h4{
 
 header {
     background-color: var(--colorPrincipal);
-    padding: 1rem 5rem ;
+    padding: 1rem 5rem;
 }
-
-@media (min-width: 768px) {
-    header {
-        position:fixed;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-    }
-}
-
-
-
 
 .nav__logo {
     margin: 0 auto;
@@ -105,27 +93,36 @@ header {
     background-color: var(--colorPrincipal) !important;
 }
 
-.nav__list {
-    display: flex;
-    list-style: none;
-    gap: .3rem;
-}
-
 .nav__logo--img {
     height: 10rem;
 }
 
 .nav-item{
-    padding: 4rem .5rem;
+    padding: .5rem .5rem;
+    font-size: 1.6rem;
 }
 
-.activo,
-.nav__list li:hover {
-    background-color: var(--colorSecundario);
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
+.nav-link,
+.navbar-brand {
+    color: var(--blanco) !important;
+}
 
-
+@media (min-width: 768px) {
+    header {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    #navbarNav {
+        justify-content: end;
+    }
+}
 
 /** Fondo imagen **/
 
