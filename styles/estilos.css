@@ -60,8 +60,8 @@ img {
 
 .boton {
     background-color: var(--colorPrincipal);
-    padding: 1rem 6rem;
-    font-size: 2rem;
+    padding: 1.5rem 7rem;
+    font-size: 1.8rem;
     font-weight: bold;
     border-radius: 2rem;
     border: none;
@@ -76,6 +76,12 @@ img {
 h1,h2,h3,h4{
     text-align: center;
     color: var(--colorSecundario);
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 1rem;
 }
 
 /** Header **/
@@ -155,13 +161,7 @@ header {
     color: var(--rojo);
 }
 
-/** Contenedor - Main **/
-
-.contenedor {
-    margin: 0 auto;
-    max-width: 120rem;
-    padding: 1rem;
-}
+/** INDEX **/
 
 .grid {
     display: grid;
@@ -183,10 +183,10 @@ header {
     }
 }
 
-
 .contenedor__titulo {
     color: var(--colorPrincipal);
     text-transform: uppercase;
+    margin: 5rem 0;
 }
 
 .profesor {
@@ -201,6 +201,61 @@ header {
 .profesor h3{
     color: var(--rojo);
     margin-bottom: 1rem;
+}
+
+.carousel-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-parrafo {
+    font-size: 1.8rem;
+    color: var(--blanco) !important;
+}
+
+.negro {
+    color: var(--negro) !important;
+}
+
+.membresias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+
+.card {
+    background-image: linear-gradient(to bottom, var(--colorPrincipal),var(--colorPrincipal) 30% , var(--blanco) 30%, var(--blanco) 70%);
+    padding: 1rem;
+    width: 25rem !important;
+    border: none;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card-text {
+    margin: 2rem 0;
+}
+
+.boton-card {
+    padding: 1rem;
+}
+
+.terminos-condiciones {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.terminos-condiciones-descripcion {
+    font-size: 1.2rem;
 }
 
 
@@ -234,10 +289,6 @@ header {
 
 fieldset {
     border: none;
-}
-
-.contenedor {
-    padding-top: 5rem;
 }
 
 .style-input {
@@ -291,14 +342,13 @@ textarea {
 
 .divisor {
     background-color: #ddd;
-    padding: 5rem;
+    padding: 1rem 0;
     margin: 6rem 0;
+    text-align: center;
 }
 
 .divisor h3{
     color: var(--rojo);
-    text-align: left;
-    font-family: Arial;
 }
 
 /** Nuestras sedes **/
@@ -339,10 +389,6 @@ textarea {
 /** PRODUCTO **/
 
 /** Producto grid **/
-
-.contenedor__titulo {
-    margin-bottom: 2rem;
-}
 
 .grid--productos {
     display: grid;
@@ -425,6 +471,7 @@ footer {
     padding: 10rem;
     color: var(--blanco);
     text-align: center;
+    margin-top: 5rem;
 }
 
 .footer__icon {
