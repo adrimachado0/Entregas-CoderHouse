@@ -24,7 +24,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        padding-top: 10rem;
+        padding-top: 13rem;
     }
    
 }
@@ -222,6 +222,7 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 3rem;
+    margin-bottom: 5rem;
 }
 
 .card {
@@ -230,6 +231,10 @@ header {
     width: 25rem !important;
     border: none;
     text-align: center;
+}
+
+.card-img-top {
+    cursor: pointer;
 }
 
 .card-title {
@@ -304,18 +309,16 @@ textarea {
 /** NOSOTROS **/
 
 /** Contenedor **/
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
 
 .contenedor p{
     color: var(--negro);
 }
 
-
-
 /** Historia e imagen del contenedor **/
+
+.contenedor-nosotros {
+    margin-top: 5rem;
+}
 
 .contenedor__historia {
     display: flex;
@@ -389,6 +392,10 @@ textarea {
 /** PRODUCTO **/
 
 /** Producto grid **/
+
+.contenedor-productos {
+    margin-bottom: 5rem;
+}
 
 .grid--productos {
     display: grid;
@@ -471,7 +478,6 @@ footer {
     padding: 10rem;
     color: var(--blanco);
     text-align: center;
-    margin-top: 5rem;
 }
 
 .footer__icon {
