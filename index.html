@@ -8,6 +8,9 @@
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+        <!-- ANIMACIONES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
         <!-- NORMALIZE -->
         <link rel="stylesheet" href="styles/normalize.css" type="text/css">
@@ -34,7 +37,7 @@
         
 
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary container animate__fadeInDown animate__animated">
                 <div class="nav__logo">
                     <a href="index.html"><img class="nav__logo--img" src="imagenes/loguito-removebg.png" alt=""></a>
                 </div>
@@ -64,7 +67,7 @@
         </header>
 
         <section class="bg">
-            <div class="bg__content">
+            <div class="bg__content animate__fadeInDownBig animate__animated">
                 <h2 class="bg__titulo">
                     Llamanos para tu <span class="titulo--redcolor">cambio</span> físico
                 </h2>
@@ -90,7 +93,7 @@
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner wow animate__fadeInLeft animate__animated">
                         <div class="carousel-item active">
                             <img src="imagenes/caneloAlvarez.jfif" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -131,36 +134,36 @@
         </div>
 
         <section class="membresias contenedor">
-            <div class="card" style="width: 18rem;">
+            <div class="wow animate__fadeInLeft animate__animated card" style="width: 18rem;">
                 <img src="imagenes/loguito-removebg.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Membresía digital anual</h5>
                   <p class="card-text">$33.500 - 95 dólares</p>
-                  <a href="pages/contacto.html" class="boton-card boton ">Comprar</a>
+                  <a href="pages/contacto.html" class="boton boton-card">Comprar</a>
                   <p class="terminos-condiciones">Términos y condiciones</p>
                   <p class="terminos-condiciones-descripcion">Sesiones de entrenamiento on demand y clases en vivo todos los días. Entrená cuándo y dónde quieras. Suscripción anual con 20% descuento y 12 cuotas sin interés. Ver términos y condiciones de compra.</p>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
+            </div>
+            <div class="wow animate__fadeInLeft animate__animated card" style="width: 18rem;">
                 <img src="imagenes/loguito-removebg.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Membresía digital semi-anual</h5>
-                  <p class="card-text">$17.800 - 50 dólares</p>
-                  <a href="pages/contacto.html" class="boton-card boton ">Comprar</a>
-                  <p class="terminos-condiciones">Términos y condiciones</p>
-                  <p class="terminos-condiciones-descripcion">Sesiones de entrenamiento on demand y clases en vivo todos los días. Entrená cuándo y dónde quieras. Suscripción anual con 15% descuento y 6 cuotas sin interés. Ver términos y condiciones de compra.</p>
+                    <h5 class="card-title">Membresía digital semi-anual</h5>
+                    <p class="card-text">$17.800 - 50 dólares</p>
+                    <a href="pages/contacto.html" class="boton boton-card">Comprar</a>
+                    <p class="terminos-condiciones">Términos y condiciones</p>
+                    <p class="terminos-condiciones-descripcion">Sesiones de entrenamiento on demand y clases en vivo todos los días. Entrená cuándo y dónde quieras. Suscripción anual con 15% descuento y 6 cuotas sin interés. Ver términos y condiciones de compra.</p>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
+            </div>
+            <div class="wow animate__fadeInLeft animate__animated card" style="width: 18rem;">
                 <img src="imagenes/loguito-removebg.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Membresía digital mensual</h5>
-                  <p class="card-text">$3500 - 10 dólares</p>
-                  <a href="pages/contacto.html" class="boton-card boton ">Comprar</a>
-                  <p class="terminos-condiciones">Términos y condiciones</p>
-                  <p class="terminos-condiciones-descripcion">Sesiones de entrenamiento on demand y clases en vivo todos los días. Entrená cuándo y dónde quieras. Suscripción mensual a débito automáticoz. Ver términos y condiciones de compra. </p>
+                    <h5 class="card-title">Membresía digital mensual</h5>
+                    <p class="card-text">$3500 - 10 dólares</p>
+                    <a href="pages/contacto.html" class="boton boton-card">Comprar</a>
+                    <p class="terminos-condiciones">Términos y condiciones</p>
+                    <p class="terminos-condiciones-descripcion">Sesiones de entrenamiento on demand y clases en vivo todos los días. Entrená cuándo y dónde quieras. Suscripción mensual a débito automáticoz. Ver términos y condiciones de compra. </p>
                 </div>
-              </div>
+            </div>
         </section>
 
         <footer>
@@ -191,7 +194,14 @@
         </footer>
 
         <!-- JAVASCRIPT -->
+        <!-- BOOTSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- ANIMACIONES -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 
     </body>
 
