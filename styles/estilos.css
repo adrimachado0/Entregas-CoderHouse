@@ -384,11 +384,16 @@ textarea {
 
 /** Nuestras sedes **/
 
+
 .nuestraSedes {
+    height: 70rem;
     margin-bottom: 5rem;
     position: relative;
-    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
 
 .nuestraSedes__imagen {
     width: fit-content;
@@ -397,6 +402,30 @@ textarea {
 
 .nuestraSedes p {
     color: var(--negro);
+}
+
+@media (min-width: 672px) {
+    .nuestraSedes {
+        height: 75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nuestraSedes {
+        height: 85rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .nuestraSedes {
+        height: 93rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nuestraSedes {
+        height: 96rem;
+    }
 }
 
 /** Equipos instalaciones **/
@@ -463,6 +492,12 @@ textarea {
     left: 50%;
     transform: translate(-50%, 0);
     visibility: visible !important;
+}
+
+@media (max-width: 480px) {
+    .boton-productos {
+        padding: 1rem 3rem;
+    }
 }
 
 @media (min-width: 768px) {
