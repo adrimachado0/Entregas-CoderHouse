@@ -4,9 +4,15 @@ body {
     background-color: variables.$colorFondo;
     font-family: "montserrat";
 
+    @media (min-width: 768px) {
+        & {
+            padding-top: 15rem !important;
+        }
+    }
+
     @media (min-width: 992px) {
         & {
-            padding-top: 12rem;
+            padding-top: 12rem !important;
         }
     }
 }
