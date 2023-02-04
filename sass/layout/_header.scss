@@ -1,0 +1,73 @@
+@use "../utilities/variables";
+
+header {
+    opacity: .5;
+    background-color: variables.$colorPrincipal;
+    padding: .5rem 0;
+}
+
+.nav__logo {
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: var(--colorPrincipal) !important;
+}
+
+.nav__logo--img {
+    height: 10rem;
+}
+
+.nav-item{
+    padding: .5rem .5rem;
+    font-size: 1.6rem;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link,
+.navbar-brand {
+    color: var(--blanco) !important;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blanco);
+    transform: scaleX(0);   
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.nav-link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.active:after {
+    transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+    header {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    #navbarNav {
+        justify-content: end;
+    }
+}

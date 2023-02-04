@@ -1,0 +1,25 @@
+@use "../utilities/variables";
+
+body {
+    background-color: variables.$colorFondo;
+    font-family: "montserrat";
+
+    @media (min-width: 992px) {
+        & {
+            padding-top: 12rem;
+        }
+    }
+}
+
+
+
+h1,h2,h3,h4{
+    text-align: center;
+    color: variables.$colorSecundario;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 1rem;
+}

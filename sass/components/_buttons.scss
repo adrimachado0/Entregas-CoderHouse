@@ -1,0 +1,16 @@
+@use "../utilities/variables";
+
+.boton {
+    background-color: variables.$colorPrincipal;
+    padding: 1.5rem 7rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    border: none;
+    color: variables.$blanco;
+    transition: .7s ease-in-out;
+
+    &:hover {
+        background-color: variables.$colorPrincipalOscuro;
+    }
+}

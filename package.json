@@ -1,0 +1,19 @@
+{
+  "name": "entregas-coderhouse",
+  "version": "1.0.0",
+  "description": "Acá voy a estar subiendo todas mis preentregas y proyecto final de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrimachado0/Entregas-CoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrimachado0/Entregas-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/adrimachado0/Entregas-CoderHouse#readme"
+}
