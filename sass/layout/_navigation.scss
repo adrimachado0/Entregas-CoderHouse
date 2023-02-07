@@ -1,0 +1,62 @@
+@use "../utilities/variables";
+
+.navbar {
+    background-color: variables.$colorPrincipal !important;
+
+    &__logo {
+        margin: 0 auto;
+
+        &--img {
+            height: 10rem;
+            max-width: none;
+        }
+    }
+
+    &-brand {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: variables.$blanco;
+    }
+
+    .nav-item{
+        padding: .5rem .5rem;
+        font-size: 1.6rem;
+        color: variables.$blanco;
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        color: variables.$blanco !important;
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: variables.$blanco;
+            transform: scaleX(0);   
+            transform-origin: bottom right;
+            transition: transform 0.6s ease-out;
+        }
+    }
+
+    .active:after {
+        transform: scaleX(1);
+    }
+    
+    @media (min-width:768px) {
+        #navbarNav {
+            justify-content: end;
+        }
+    }
+
+}
+

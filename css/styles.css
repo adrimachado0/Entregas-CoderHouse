@@ -1,61 +1,175 @@
-header {
-  opacity: 0.5;
-  background-color: #640D14;
-  padding: 0.5rem 0;
+/** NOSOTROS **/
+/** Historia e imagen del contenedor **/
+.contenedor-nosotros {
+  margin-top: 5rem;
 }
 
-.nav__logo {
+.contenedor__historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contenedor__parrafo {
+  max-width: 60rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor__historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/** DIVISOR **/
+.divisor h3 {
+  color: var(--rojo);
+}
+
+/** Nuestras sedes **/
+.nuestraSedes {
+  height: 70rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nuestraSedes__imagen {
+  width: fit-content;
+  margin: 5rem auto;
+}
+
+.nuestraSedes p {
+  color: var(--negro);
+}
+
+@media (min-width: 672px) {
+  .nuestraSedes {
+    height: 75rem;
+  }
+}
+@media (min-width: 768px) {
+  .nuestraSedes {
+    height: 85rem;
+  }
+}
+@media (min-width: 992px) {
+  .nuestraSedes {
+    height: 93rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nuestraSedes {
+    height: 96rem;
+  }
+}
+/** Equipos instalaciones **/
+.equipos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  position: absolute;
   margin: 0 auto;
+  bottom: 0;
 }
 
-.navbar {
-  background-color: var(--colorPrincipal) !important;
+.sedes {
+  width: 60rem;
+  text-align: center;
 }
 
-.nav__logo--img {
-  height: 10rem;
+.sedes__titulo {
+  margin-bottom: 2rem;
+  color: var(--colorPrincipal);
+  border-bottom: 0.1rem solid var(--colorPrincipalOscuro);
 }
 
-.nav-item {
-  padding: 0.5rem 0.5rem;
-  font-size: 1.6rem;
+.main__contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondasocontacto.jpg);
+  background-size: cover;
+  height: 100rem;
+}
+.main__contacto .formulario {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #FEFAF9;
+}
+.main__contacto .formulario__fieldset {
+  border: none;
+}
+.main__contacto .formulario__fieldset .style-input {
+  width: 100%;
+  padding: 3rem;
+  font-size: 1.5rem;
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
+.carousel-tiem-titulo {
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.nav-link,
-.navbar-brand {
-  color: var(--blanco) !important;
+.membresias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem 3rem;
+  margin-bottom: 5rem;
+}
+.membresias .card {
+  background-image: linear-gradient(to bottom, #640D14, #640D14 30%, #FEFAF9 30%, #FEFAF9 70%);
+  padding: 1rem;
+  width: 25rem !important;
+  border: none;
+  text-align: center;
+}
+.membresias .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+.membresias .card-text {
+  margin: 2rem 0;
+}
+.membresias .card .terminos-condiciones {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.membresias .card .terminos-condiciones-descripcion {
+  font-size: 1.2rem;
 }
 
-.nav-link {
-  display: inline-block;
-  position: relative;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+  align-items: center;
 }
 
-.nav-link:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--blanco);
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.6s ease-out;
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.nav-link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
-.active:after {
-  transform: scaleX(1);
+header {
+  background-color: #640D14;
+  padding: 0.5rem 0;
 }
 
 @media (min-width: 768px) {
@@ -65,13 +179,82 @@ header {
     width: 100%;
     z-index: 10;
   }
-  #navbarNav {
+}
+.navbar {
+  background-color: #640D14 !important;
+}
+.navbar__logo {
+  margin: 0 auto;
+}
+.navbar__logo--img {
+  height: 10rem;
+  max-width: none;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FEFAF9;
+}
+.navbar .nav-item {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.6rem;
+  color: #FEFAF9;
+}
+.navbar .nav-link {
+  display: inline-block;
+  position: relative;
+  color: #FEFAF9 !important;
+}
+.navbar .nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar .nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FEFAF9;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+.navbar .active:after {
+  transform: scaleX(1);
+}
+@media (min-width: 768px) {
+  .navbar #navbarNav {
     justify-content: end;
   }
 }
+
+.bg {
+  height: 85rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imagenes/cuidar_columna_gimnasio.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.bg__titulo {
+  color: #FEFAF9;
+  text-transform: uppercase;
+}
+.bg__titulo--redcolor {
+  color: #AD2831;
+}
+.bg__ubicacion {
+  margin: 2rem 0 3.5rem 0;
+  color: #FEFAF9;
+}
+
 .boton {
   background-color: #640D14;
-  padding: 1.5rem 7rem;
+  padding: 1rem 5rem;
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 2rem;
@@ -80,7 +263,7 @@ header {
   transition: 0.7s ease-in-out;
 }
 .boton:hover {
-  background-color: #250902;
+  background-color: #38040E;
 }
 
 html {
@@ -105,7 +288,6 @@ h4 {
 
 p, a {
   font-size: 1.6rem;
-  color: #1A1F25;
 }
 
 a {
@@ -114,23 +296,42 @@ a {
 
 body {
   background-color: #F1F2ED;
-  font-family: "montserrat";
+  font-family: "Montserrat";
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 15rem !important;
+  }
 }
 @media (min-width: 992px) {
   body {
-    padding-top: 12rem;
+    padding-top: 12rem !important;
   }
 }
-
-h1, h2, h3, h4 {
+body h1, body h2, body h3, body h4 {
   text-align: center;
   color: #800E13;
+  margin: 0 !important;
 }
-
-.contenedor {
+body .contenedor {
   margin: 0 auto;
   max-width: 120rem;
   padding: 1rem;
+}
+body .contenedor__titulo {
+  color: #640D14;
+  text-transform: uppercase;
+  margin: 5rem 0 !important;
+}
+body .negro {
+  color: #1A1F25 !important;
+}
+body .blanco {
+  color: #FEFAF9 !important;
+}
+
+textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

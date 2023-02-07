@@ -1,1 +1,53 @@
 @use "../utilities/variables";
+
+.carousel-tiem {
+    &-titulo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.membresias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem 3rem;
+    margin-bottom: 5rem;
+
+
+    .card {
+        background-image: linear-gradient(to bottom, variables.$colorPrincipal,variables.$colorPrincipal 30% , variables.$blanco 30%, variables.$blanco 70%);
+        padding: 1rem;
+        width: 25rem !important;
+        border: none;
+        text-align: center;
+
+        &-title {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        &-text {
+            margin: 2rem 0;
+        }
+
+        .terminos-condiciones {
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &-descripcion {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+

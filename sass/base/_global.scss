@@ -2,7 +2,7 @@
 
 body {
     background-color: variables.$colorFondo;
-    font-family: "montserrat";
+    font-family: variables.$fuentePrincipal;
 
     @media (min-width: 768px) {
         & {
@@ -15,17 +15,40 @@ body {
             padding-top: 12rem !important;
         }
     }
+
+    h1,h2,h3,h4{
+        text-align: center;
+        color: variables.$colorSecundario;
+        margin: 0 !important;
+    }
+
+    .contenedor {
+        margin: 0 auto;
+        max-width: 120rem;
+        padding: 1rem;
+
+        &__titulo {
+            color: variables.$colorPrincipal;
+            text-transform: uppercase;
+            margin: 5rem 0 !important;
+        }
+    }
+    
+    .negro {
+        color: variables.$negro !important;
+    }
+
+    .blanco {
+        color: variables.$blanco !important;
+    }
+}
+
+textarea {
+    resize: none;
 }
 
 
 
-h1,h2,h3,h4{
-    text-align: center;
-    color: variables.$colorSecundario;
-}
 
-.contenedor {
-    margin: 0 auto;
-    max-width: 120rem;
-    padding: 1rem;
-}
+
+

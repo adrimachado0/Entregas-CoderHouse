@@ -2,7 +2,7 @@
 
 .boton {
     background-color: variables.$colorPrincipal;
-    padding: 1.5rem 7rem;
+    padding: 1rem 5rem;
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: 2rem;
@@ -11,6 +11,6 @@
     transition: .7s ease-in-out;
 
     &:hover {
-        background-color: variables.$colorPrincipalOscuro;
+        background-color: variables.$colorSecundarioOscuro;
     }
 }
