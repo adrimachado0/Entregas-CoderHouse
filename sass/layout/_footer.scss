@@ -1,0 +1,17 @@
+@use "../utilities/variables";
+
+footer {
+    background-color: variables.$rojo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem;
+    color: variables.$blanco;
+    text-align: center;
+
+    &__icon {
+        display: flex;
+        gap: 5rem;
+    }
+}

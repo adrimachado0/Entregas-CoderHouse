@@ -1,93 +1,33 @@
-/** NOSOTROS **/
-/** Historia e imagen del contenedor **/
-.contenedor-nosotros {
-  margin-top: 5rem;
-}
-
-.contenedor__historia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-}
-
-.contenedor__parrafo {
-  max-width: 60rem;
-}
-
-@media (min-width: 768px) {
-  .contenedor__historia {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-/** DIVISOR **/
-.divisor h3 {
-  color: var(--rojo);
-}
-
-/** Nuestras sedes **/
-.nuestraSedes {
-  height: 70rem;
-  margin-bottom: 5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.nuestraSedes__imagen {
-  width: fit-content;
-  margin: 5rem auto;
-}
-
-.nuestraSedes p {
-  color: var(--negro);
-}
-
-@media (min-width: 672px) {
-  .nuestraSedes {
-    height: 75rem;
-  }
-}
-@media (min-width: 768px) {
-  .nuestraSedes {
-    height: 85rem;
-  }
-}
-@media (min-width: 992px) {
-  .nuestraSedes {
-    height: 93rem;
-  }
-}
-@media (min-width: 1200px) {
-  .nuestraSedes {
-    height: 96rem;
-  }
-}
-/** Equipos instalaciones **/
-.equipos {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  gap: 2rem;
-  padding: 0 1rem;
-  position: absolute;
+.contenedorNosotros__parrafo {
   margin: 0 auto;
-  bottom: 0;
-}
-
-.sedes {
-  width: 60rem;
   text-align: center;
 }
 
-.sedes__titulo {
-  margin-bottom: 2rem;
-  color: var(--colorPrincipal);
-  border-bottom: 0.1rem solid var(--colorPrincipalOscuro);
+.nuestraSedes {
+  margin-bottom: 5rem;
+}
+.nuestraSedes .equipos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.nuestraSedes .equipos__sedes {
+  width: 55rem;
+  text-align: center;
 }
 
+@media (min-width: 768px) {
+  .contenedorNosotros {
+    margin-top: 2rem !important;
+  }
+  .contenedorNosotros__historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+}
 .main__contacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondasocontacto.jpg);
   background-size: cover;
@@ -118,10 +58,10 @@
 
 .membresias {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 3rem 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem !important;
 }
 .membresias .card {
   background-image: linear-gradient(to bottom, #640D14, #640D14 30%, #FEFAF9 30%, #FEFAF9 70%);
@@ -149,22 +89,78 @@
   font-size: 1.2rem;
 }
 
+.contenedor-producto {
+  margin-bottom: 5rem !important;
+}
+
+.producto {
+  max-width: 24rem;
+  min-height: 43rem;
+  position: relative;
+}
+.producto__informacion {
+  padding: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.invisible {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: visible !important;
+}
+
+.boton-productos {
+  padding: 1rem 2rem !important;
+}
+
+@media (min-width: 768px) {
+  .invisible {
+    opacity: 0;
+    bottom: 65%;
+  }
+  .producto:hover .invisible {
+    opacity: 1;
+    transition: 1s;
+  }
+}
+footer {
+  background-color: #AD2831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem;
+  color: #FEFAF9;
+  text-align: center;
+}
+footer__icon {
+  display: flex;
+  gap: 5rem;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   margin: 3rem 0;
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 header {
@@ -193,7 +189,6 @@ header {
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #FEFAF9;
 }
 .navbar .nav-item {
   padding: 0.5rem 0.5rem;
@@ -226,7 +221,7 @@ header {
 }
 @media (min-width: 768px) {
   .navbar #navbarNav {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
@@ -236,8 +231,8 @@ header {
   background-size: cover;
   background-position: top;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .bg__titulo {
@@ -329,8 +324,7 @@ body .negro {
 body .blanco {
   color: #FEFAF9 !important;
 }
-
-textarea {
+body textarea {
   resize: none;
 }
 

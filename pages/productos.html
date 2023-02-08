@@ -14,8 +14,8 @@
         <!-- NORMALIZE -->
         <link rel="stylesheet" href="../styles/normalize.css" type="text/css">
 
-        <!-- STYLES -->
-        <link rel="stylesheet" href="../styles/estilos.css" type="text/css">
+         <!-- SASS -->
+         <link rel="stylesheet" href="../css/styles.css" type="text/css">
         
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,231 +27,202 @@
 
 
         <title>Cambiá tu vida con MyFitness</title>
-
-
     </head>
-
 
     <body>
         
-
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary container">
-                <div class="nav__logo">
-                    <a href="../index.html"><img class="nav__logo--img" src="../imagenes/loguito-removebg.png" alt=""></a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary container animate__fadeInDown animate__animated">
+                <div class="navbar__logo">
+                    <a href="index.html"><img class="navbar__logo--img" src="../imagenes/loguito-removebg.png" alt=""></a>
                 </div>
                 <div class="container-fluid centrar">
-                  <a class="navbar-brand" href="#">MyFitness</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contactanos</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <a class="navbar-brand blanco" href="#">MyFitness</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
               </nav>
         </header>
 
-
         <main class="contenedor contenedor-productos">
             <h2 class="contenedor__titulo">Nuestros productos</h1>
-            <div class="grid--productos">
+            <div class="grid">
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html" class="figure">
-                        <img class="producto__imagen" src="../imagenes/bandasElasticas.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Bodytone</h4>
-                            <p class="producto__descripcion">Bandas elásticas rojo - azul - amarillo</p>
-                            <p class="producto__precio">$500</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/bandasElasticas.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Bodytone</h4>
+                        <p class="producto__descripcion">Bandas elásticas rojo - azul - amarillo</p>
+                        <p class="producto__precio">$500</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/barragim.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Genérico</h4>
-                            <p class="producto__descripcion">Barra marco de puerta - Espalda - Pecho</p>
-                            <p class="producto__precio">$6000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/barragim.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Genérico</h4>
+                        <p class="producto__descripcion">Barra marco de puerta - Espalda - Pecho</p>
+                        <p class="producto__precio">$6000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/barrasPlanchas.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">IronMasters</h4>
-                            <p class="producto__descripcion">Barritas - Flexiones</p>
-                            <p class="producto__precio">$15000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/barrasPlanchas.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">IronMasters</h4>
+                        <p class="producto__descripcion">Barritas - Flexiones</p>
+                        <p class="producto__precio">$15000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/bolsaboxeo.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Sport Fitness</h4>
-                            <p class="producto__descripcion">Bolsa - Guantes para Boxeo</p>
-                            <p class="producto__precio">$9000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/bolsaboxeo.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Sport Fitness</h4>
+                        <p class="producto__descripcion">Bolsa - Guantes para Boxeo</p>
+                        <p class="producto__precio">$9000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/comboPesas.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">SM</h4>
-                            <p class="producto__descripcion">Combo soga - mancuernas 1kg</p>
-                            <p class="producto__precio">$3000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/comboPesas.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">SM</h4>
+                        <p class="producto__descripcion">Combo soga - mancuernas 1kg</p>
+                        <p class="producto__precio">$3000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/discosPuma.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Puma</h4>
-                            <p class="producto__descripcion">Discos para mancuerna 5 - 3 - 2 KG</p>
-                            <p class="producto__precio">$4300</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/discosPuma.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Puma</h4>
+                        <p class="producto__descripcion">Discos para mancuerna 5 - 3 - 2 KG</p>
+                        <p class="producto__precio">$4300</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/guantesAdidas.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Adidas</h4>
-                            <p class="producto__descripcion">Guantes de buen agarre</p>
-                            <p class="producto__precio">$4000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/guantesAdidas.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Adidas</h4>
+                        <p class="producto__descripcion">Guantes de buen agarre</p>
+                        <p class="producto__precio">$4000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/guantesboxeo.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Genérico</h4>
-                            <p class="producto__descripcion">Guantes de boxeo calidad premium</p>
-                            <p class="producto__precio">$3500</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/guantesboxeo.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Genérico</h4>
+                        <p class="producto__descripcion">Guantes de boxeo calidad premium</p>
+                        <p class="producto__precio">$3500</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
 
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/mancuernas.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">XtremeSport</h4>
-                            <p class="producto__descripcion">Mancuernas importadas 10kg</p>
-                            <p class="producto__precio">$5000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/mancuernas.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">XtremeSport</h4>
+                        <p class="producto__descripcion">Mancuernas importadas 10kg</p>
+                        <p class="producto__precio">$5000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                     
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/tablero.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Golds Gym</h4>
-                            <p class="producto__descripcion">Step junior</p>
-                            <p class="producto__precio">$3000</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/tablero.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Golds Gym</h4>
+                        <p class="producto__descripcion">Step junior</p>
+                        <p class="producto__precio">$3000</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
 
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/rodilleras.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Nike</h4>
-                            <p class="producto__descripcion">Rodilleras</p>
-                            <p class="producto__precio">$4500</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/rodilleras.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Nike</h4>
+                        <p class="producto__descripcion">Rodilleras</p>
+                        <p class="producto__precio">$4500</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
 
                 </div> <!--.producto-->
                 <div class="wow animate__animated animate__fadeInUp producto">
-                    <a href="contacto.html">
-                        <img class="producto__imagen" src="../imagenes/soga.jfif" alt="imagen camisa">
-                        <div class="producto__informacion">
-                            <h4 class="producto__nombre">Todo Fit</h4>
-                            <p class="producto__descripcion">Combo de sogas para saltar</p>
-                            <p class="producto__precio">$2500</p>
-                        </div>
-                        <div class="invisible">
-                            <form>
-                                <input type="submit" value="Comprar" class="boton boton-productos">
-                            </form>
-                        </div>
-                    </a>
+                    <img class="producto__imagen" src="../imagenes/soga.jfif" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <h4 class="producto__nombre">Todo Fit</h4>
+                        <p class="producto__descripcion">Combo de sogas para saltar</p>
+                        <p class="producto__precio">$2500</p>
+                    </div>
+                    <div class="invisible">
+                        <form>
+                            <input type="submit" value="Comprar" class="boton boton-productos">
+                        </form>
+                    </div>
                 </div> <!--.producto-->
             </div>
         </main>

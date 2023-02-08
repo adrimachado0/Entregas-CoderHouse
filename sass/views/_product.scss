@@ -1,0 +1,48 @@
+@use "../utilities/variables";
+
+.contenedor-producto {
+    margin-bottom: 5rem !important;
+
+}
+
+.producto {
+    max-width: 24rem;
+    min-height: 43rem;
+    position: relative;
+
+    &__informacion {
+        padding: 2rem;
+        text-align: center;
+        color: black;
+    }
+}
+
+.invisible {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    visibility: visible !important;
+}
+
+.boton-productos{
+    padding: 1rem 2rem !important;
+}
+
+@media (min-width: variables.$tablets) {
+    .invisible {
+        opacity: 0;
+        bottom: 65%;
+    }      
+    .producto:hover .invisible{
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+
+
+
+
+
+

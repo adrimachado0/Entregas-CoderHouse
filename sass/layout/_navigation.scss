@@ -15,7 +15,6 @@
     &-brand {
         font-size: 1.8rem;
         font-weight: bold;
-        color: variables.$blanco;
     }
 
     .nav-item{
@@ -52,11 +51,10 @@
         transform: scaleX(1);
     }
     
-    @media (min-width:768px) {
-        #navbarNav {
-            justify-content: end;
+    @media (min-width: variables.$tablets) {
+        #navbarNav{
+            justify-content: flex-end;
         }
     }
-
 }
 

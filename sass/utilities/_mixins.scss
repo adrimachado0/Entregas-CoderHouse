@@ -1,0 +1,14 @@
+@use "../utilities/variables";
+
+@mixin flexRowCenter {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

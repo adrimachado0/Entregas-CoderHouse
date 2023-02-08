@@ -1,4 +1,6 @@
 @use "../utilities/variables";
+@use "../utilities/mixins";
+
 
 .bg {
     height: 85rem;
@@ -7,10 +9,7 @@
     background-size: cover;
     background-position: top;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    @include mixins.flexCenter;
     
     &__titulo {
         color: variables.$blanco;
