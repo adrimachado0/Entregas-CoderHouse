@@ -1,5 +1,6 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
+@import "../components/buttons";
 
 .carousel-tiem {
     &-titulo {
@@ -33,16 +34,25 @@
             margin: 2rem 0;
         }
 
-        .terminos-condiciones {
-            font-size: 1.4rem;
-            margin-top: 2rem;
-            text-decoration: underline;
-            cursor: pointer;
+        &-body {
+            .terminos-condiciones {
+                font-size: 1.4rem;
+                margin-top: 2rem;
+                text-decoration: underline;
+                cursor: pointer;
 
-            &-descripcion {
-                font-size: 1.2rem;
+                &-descripcion {
+                    font-size: 1.2rem;
+                }
+            }
+
+            &__boton {
+                @extend .boton;
+                padding: 1rem 1.5rem;
             }
         }
+
+        
     }
 }
 

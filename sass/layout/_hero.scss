@@ -1,6 +1,6 @@
 @use "../utilities/variables";
 @use "../utilities/mixins";
-
+@import "../components/buttons";
 
 .bg {
     height: 85rem;
@@ -23,5 +23,10 @@
     &__ubicacion {
         margin: 2rem 0 3.5rem 0;
         color: variables.$blanco;
+    }
+
+    &__boton {
+        @extend .boton;
+        padding: 1.5rem 7rem;
     }
 }

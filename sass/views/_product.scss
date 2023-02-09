@@ -1,4 +1,5 @@
 @use "../utilities/variables";
+@import "../components/buttons";
 
 .contenedor-producto {
     margin-bottom: 5rem !important;
@@ -26,6 +27,7 @@
 }
 
 .boton-productos{
+    @extend .boton;
     padding: 1rem 2rem !important;
 }
 

@@ -28,6 +28,19 @@
     gap: 1rem;
   }
 }
+.boton, .bg__boton, .boton-productos, .membresias .card-body__boton, .main__contacto .formulario__fieldset--boton {
+  background-color: #640D14;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: none;
+  color: #FEFAF9;
+  transition: 0.7s ease-in-out;
+}
+.boton:hover, .bg__boton:hover, .boton-productos:hover, .membresias .card-body__boton:hover, .main__contacto .formulario__fieldset--boton:hover {
+  background-color: #38040E;
+}
+
 .main__contacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondasocontacto.jpg);
   background-size: cover;
@@ -49,6 +62,24 @@
   width: 100%;
   padding: 3rem;
   font-size: 1.5rem;
+}
+.main__contacto .formulario__fieldset--boton {
+  width: 90%;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.boton, .bg__boton, .boton-productos, .membresias .card-body__boton, .main__contacto .formulario__fieldset--boton {
+  background-color: #640D14;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: none;
+  color: #FEFAF9;
+  transition: 0.7s ease-in-out;
+}
+.boton:hover, .bg__boton:hover, .boton-productos:hover, .membresias .card-body__boton:hover, .main__contacto .formulario__fieldset--boton:hover {
+  background-color: #38040E;
 }
 
 .carousel-tiem-titulo {
@@ -79,14 +110,30 @@
 .membresias .card-text {
   margin: 2rem 0;
 }
-.membresias .card .terminos-condiciones {
+.membresias .card-body .terminos-condiciones {
   font-size: 1.4rem;
   margin-top: 2rem;
   text-decoration: underline;
   cursor: pointer;
 }
-.membresias .card .terminos-condiciones-descripcion {
+.membresias .card-body .terminos-condiciones-descripcion {
   font-size: 1.2rem;
+}
+.membresias .card-body__boton {
+  padding: 1rem 1.5rem;
+}
+
+.boton, .bg__boton, .boton-productos, .main__contacto .formulario__fieldset--boton, .membresias .card-body__boton {
+  background-color: #640D14;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: none;
+  color: #FEFAF9;
+  transition: 0.7s ease-in-out;
+}
+.boton:hover, .bg__boton:hover, .boton-productos:hover, .main__contacto .formulario__fieldset--boton:hover, .membresias .card-body__boton:hover {
+  background-color: #38040E;
 }
 
 .contenedor-producto {
@@ -225,6 +272,19 @@ header {
   }
 }
 
+.boton, .bg__boton, .main__contacto .formulario__fieldset--boton, .membresias .card-body__boton, .boton-productos {
+  background-color: #640D14;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: none;
+  color: #FEFAF9;
+  transition: 0.7s ease-in-out;
+}
+.boton:hover, .bg__boton:hover, .main__contacto .formulario__fieldset--boton:hover, .membresias .card-body__boton:hover, .boton-productos:hover {
+  background-color: #38040E;
+}
+
 .bg {
   height: 85rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imagenes/cuidar_columna_gimnasio.jpg");
@@ -246,10 +306,12 @@ header {
   margin: 2rem 0 3.5rem 0;
   color: #FEFAF9;
 }
+.bg__boton {
+  padding: 1.5rem 7rem;
+}
 
-.boton {
+.boton, .main__contacto .formulario__fieldset--boton, .membresias .card-body__boton, .boton-productos, .bg__boton {
   background-color: #640D14;
-  padding: 1rem 5rem;
   font-size: 1.8rem;
   font-weight: bold;
   border-radius: 2rem;
@@ -257,7 +319,7 @@ header {
   color: #FEFAF9;
   transition: 0.7s ease-in-out;
 }
-.boton:hover {
+.boton:hover, .main__contacto .formulario__fieldset--boton:hover, .membresias .card-body__boton:hover, .boton-productos:hover, .bg__boton:hover {
   background-color: #38040E;
 }
 
