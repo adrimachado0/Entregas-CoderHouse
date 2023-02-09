@@ -99,7 +99,7 @@
   position: relative;
 }
 .producto__informacion {
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
   color: black;
 }
@@ -144,11 +144,11 @@ footer__icon {
 .grid {
   display: grid;
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
   align-items: center;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
