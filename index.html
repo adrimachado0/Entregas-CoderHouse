@@ -5,6 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Prefetch -->
+        <link rel="Prefetch" href="nosotros.html" as="document">
+
+        <!-- Preload -->
+        <link rel="stylesheet" href="styles/normalize.css" as="style">
+        <link rel="stylesheet" href="imagenes/loguito-removebg.png" as="image">
+
+        <!-- Meta -->
+        <meta name="author" content="Adriel Machado">
+        <meta name="keywords" content="index home homepage indice pagina_principal gimnasio MyFitness fitness mancuerna ejercicio musculación boxeo">
+        <meta name="description" content="Somos una pagina dedicada al gimnasio, en esta pagina encontraras nuestras sedes, nuestros profesores, nuestros productos y mas">
+
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -94,21 +106,38 @@
                     </div>
                     <div class="carousel-inner wow animate__fadeInLeft animate__animated">
                         <div class="carousel-item active">
-                            <img src="imagenes/caneloAlvarez.jfif" class="d-block w-100" alt="...">
+                            
+                                <picture>
+                                    <source loading="lazy" srcset="imagenes/caneLoAlvarez.webp" class="d-block w-100" alt=". . .">
+                                    <img loading="Lazy" src="imagenes/caneloAlvarez.jfif" class="d-block w-100" alt=". . .">
+                                </picture>
+
+                            
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="carousel-titulo blanco">Saúl Alvarez</h5>
                                 <p class="carousel-parrafo blanco">Nuestro profe de musculación, boxeo y fuerza. Experiencia de más de 10 años.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="imagenes/profeDeportes.webp" class="d-block w-100" alt="...">
+                        
+                            <picture>
+                                <source loading="Lazy" srcset="imagenes/profeDeportes.webp" class="d-block w-100" alt=". . .">
+                                <img loading="Lazy" src="imagenes/profeDeportes.webp" class="d-block w-100" alt=". . .">
+                            </picture>
+
+                            
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="carousel-titulo blanco">Mariela Gimenez</h5>
                                 <p class="carousel-parrafo blanco">Profesora de baile, y gimnasio funcional. Con una corta carrera de 3 años.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="imagenes/profe2.webp" class="d-block w-100" alt="...">
+                            
+                            <picture>
+                            <source loading="Lazy" srcset="imagenes/profe2.webp" class="d-block w-100" alt=". . .">
+                                <img loading="Lazy" src="imagenes/profe2.webp" class="d-block w-100" alt="..."> 
+                            </picture>
+                        
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="carousel-titulo negro">Julián Larrosa</h5>
                                 <p class="carousel-parrafo negro">El único nutricionista que tenemos. Con una experiencia de 13 años desde que se recibió.</p>
